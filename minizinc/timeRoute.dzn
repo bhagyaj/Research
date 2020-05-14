@@ -1,0 +1,6 @@
+CITY = {A,B,C,D,E,F,G,H};
+EDGE = {a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t};
+noEdges = 18;
+incoming = [{b,f},{e,n,j},{m,r},{a,d,g},{c,s},{h,i,o,l},{q,p},{k,t}];
+outgoing = [{a,e},{f,i,m},{n,q},{b,c,h},{d,t},{g,j,p,k},{o,r},{l,s}];
+capacity =[100,100,500,500,200,200,1100,1100,100,100,700,700,400,400,700,700,500,500,500,500];
