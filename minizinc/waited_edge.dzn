@@ -1,0 +1,7 @@
+CITY = {A,B,C,D,E,F,G,H};
+EDGE = {a1,b1,c1,d1,e1,f1,g1,h1,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t};
+noEdges = 18;
+incoming = [{b,f,a1},{e,n,j,b1},{m,r,c1},{a,d,g,d1},{c,s,e1},{h,i,o,l,f1},{q,p,g1},{k,t,h1}];
+outgoing = [{a,e,a1},{f,i,m,b1},{n,q,c1},{b,c,h,d1},{d,t,e1},{g,j,p,k,f1},{o,r,g1},{l,s,h1}];
+capacity =[1000,1000,1000,1000,1000,1000,1000,1000,100,100,500,500,200,200,1100,1100,100,100,700,700,400,400,700,700,500,500,500,500];
+self_edges={a1,b1,c1,d1,e1,f1,g1,h1};
