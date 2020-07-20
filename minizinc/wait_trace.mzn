@@ -1,4 +1,4 @@
-include "waited_edge.mzn";
+include "joined2.mzn";
 
 constraint forall (e in EDGE) (
   let {
@@ -18,7 +18,10 @@ output
   "\([ sum (f in FLOW) (path_demand[f, t, e]) | e in EDGE])\n"
   | t in TIME ]
 %   ++["\n\(path_demand[1, 0, e])"]++["\n\(path_demand[2, 0, m])"]
-  ++["\n\(sumOfIn_par(1,0,B))"]++["\n\(sumOfOut_par(1,1,B))"]
+  ++["\n\(sumOfIn_par(1,0,B))"]++["\n\(sumOfOut_par(1,1,B))\n"]
+  ++["\([run[f]|f in FAIL])\n"]
+  ++["\([startT[f]|f in FAIL])\n"]
+%   ++["\(withinblocked(3,0))\n"]
 %   ++["\n Wait \n"]++
 
 %  ["\([c | c in CITY])\n"] ++
